@@ -15,7 +15,7 @@ for %%a in ("*.jpeg")  do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "comp
 for %%a in ("*.png")   do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "compressed/%%~na.png"
 for %%a in ("*.tiff")  do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "compressed/%%~na.tiff"
 for %%a in ("*.webp")  do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "compressed/%%~na.webp"
-for %%a in ("*.dng")  do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "compressed/%%~na.dng"
+for %%a in ("*.dng")   do ffmpeg -y -i "%%a" -map 0 -c:v libsvtav1 -crf 30 "compressed/%%~na.dng"
 
 ;Video Formats
 
